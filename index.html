@@ -183,7 +183,8 @@
                 <div class="absolute inset-0 opacity-5" style="background-image: linear-gradient(#005AD2 1px, transparent 1px), linear-gradient(90deg, #005AD2 1px, transparent 1px); background-size: 20px 20px;"></div>
                 
                 <div class="w-full h-full relative px-8 py-6">
-                    <svg class="absolute inset-0 w-full h-full" style="pointer-events: none;">
+                    <!-- Added viewBox and preserveAspectRatio to ensure the map scales with the container -->
+                    <svg class="absolute inset-0 w-full h-full" viewBox="0 0 500 100" preserveAspectRatio="none" style="pointer-events: none;">
                         <path d="M 40,50 Q 150,10 250,50 T 460,50" fill="none" stroke="#e2e8f0" stroke-width="4" />
                         <path d="M 40,50 Q 150,10 250,50 T 460,50" fill="none" stroke="#005AD2" stroke-width="2" stroke-dasharray="4 4" class="opacity-30" />
                     </svg>
